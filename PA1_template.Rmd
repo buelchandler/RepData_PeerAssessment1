@@ -5,7 +5,7 @@ output:
     keep_md: true
 ---
 ```{r global_options, include=TRUE}
-knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='figure/',
+knitr::opts_chunk$set(fig.width=12, fig.height=8, # fig.path='figure/',
                       echo=TRUE, warning=TRUE, message=TRUE)
 ```
 
