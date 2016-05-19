@@ -1,7 +1,7 @@
 # Reproducible Research: Peer Assessment 1
 
 ```r
-knitr::opts_chunk$set(fig.width=12, fig.height=8, # fig.path='figure/',
+knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='figure-html/',
                       echo=TRUE, warning=TRUE, message=TRUE)
 ```
 
@@ -67,7 +67,7 @@ hist(steps$total, freq = TRUE, breaks = 12, main = "Histogram of Steps Taken per
      xlab = "Number of Steps per Day", col = "green")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![](figure-html/unnamed-chunk-4-1.png)<!-- -->
 
 **Calculate and report the mean and median of the total number of steps taken per day**
 
@@ -109,7 +109,7 @@ plot(intervals$time, intervals$avg, type = "l",
      xlab = "5-minute intervals", ylab = "Average Number of Steps Taken")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
+![](figure-html/unnamed-chunk-7-1.png)<!-- -->
 
 **Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?**
 
@@ -166,7 +166,7 @@ hist(steps$total, freq = TRUE, breaks = 12, main = "Histogram of Steps Taken per
      xlab = "Number of Steps per Day", col = "green")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
+![](figure-html/unnamed-chunk-11-1.png)<!-- -->
 
 and the Mean for all the days with no NA:
 
@@ -218,6 +218,6 @@ xyplot(avg ~ interval | wday, intervals, type = "l", layout = c(1,2),
        xlab = "5-minute intervals", ylab = "Average Number of Steps Taken")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-15-1.png)<!-- -->
+![](figure-html/unnamed-chunk-15-1.png)<!-- -->
 
 From 5:00 AM to around 10:00 AM on weekdays, there appears to be more activity (Gym/getting to work?). However from 10:00 AM on on the weekends, there appears to be more overall activity than in corresponding weekday intervals.
